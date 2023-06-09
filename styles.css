@@ -51,12 +51,12 @@ body {
 
 /* Quote Section */
 
+/* Quote Section */
+
 blockquote {
   color: var(--text-color-dark);
   background-color: #DDE6ED;
-  border-left: 1rem solid #27374D;
-  border-top: 1rem solid #526D82;
-  border-bottom: 1rem solid #526D82;
+  border-left: .5rem solid #526D82;
   border-radius: 20px;
   margin: 1.5em 0;
   padding: 0.5em 1em;
@@ -73,6 +73,7 @@ blockquote cite {
 }
 
 /* Image Gallery */
+
 
 .images {
   display: flex;
@@ -135,4 +136,23 @@ footer {
   font-weight: bold;
   font-size: 1.3rem;
   color: #27374D;
+}
+
+@media only screen and (max-width: 460px) {
+  .image_box img {
+    border: .3rem solid #526D82;
+  }
+
+  .inv_box img {
+    border: .3rem solid #526D82;
+  }
+
+  blockquote {
+    color: var(--text-color-dark);
+    border-top: 0rem solid #526D82;
+    border-bottom: 0rem solid #526D82;
+    border-radius: 5px;
+    border-left: .5rem solid #526D82;
+
+  }
 }
